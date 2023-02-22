@@ -5,13 +5,13 @@
     <parent>
         <groupId>com.jjimenezz</groupId>
         <artifactId>jjz-tf-cards-spring</artifactId>
-        <version>0.0.3</version>
+        <version>0.0.4-SNAPSHOT</version>
     </parent>
 
     <!-- <packaging>jar</packaging> -->
     <groupId>com.jjimenezz</groupId>
     <artifactId>tf-cards-data</artifactId>
-    <version>0.0.3</version>
+    <version>0.0.4-SNAPSHOT</version>
 
     <name>tf-cards-data</name>
 
