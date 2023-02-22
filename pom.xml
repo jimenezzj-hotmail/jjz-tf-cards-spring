@@ -13,14 +13,17 @@
 	<packaging>pom</packaging>
 	<name>jjz-tf-cards-spring</name>
 	<description>Demo project for Spring Boot</description>
+
 	<properties>
 		<java.version>17</java.version>
 		<project.scm.id>tf-cards-dev-server</project.scm.id>
 	</properties>
+	
 	<modules>
 		<module>tf-cards-data</module>
 		<module>tf-cards-web</module>
 	</modules>
+	
 	<dependencies>
 
 	</dependencies>
@@ -30,14 +33,14 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-				<configuration>
+				<!-- <configuration>
 					<excludes>
 						<exclude>
 							<groupId>org.projectlombok</groupId>
 							<artifactId>lombok</artifactId>
 						</exclude>
 					</excludes>
-				</configuration>
+				</configuration> -->
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
