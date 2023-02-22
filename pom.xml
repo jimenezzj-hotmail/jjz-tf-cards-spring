@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>2.7.8</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.jjimenezz</groupId>
 	<artifactId>jjz-tf-cards-spring</artifactId>
@@ -16,11 +17,12 @@
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>17</java.version>
+		<project.scm.id>tf-cards-dev-server</project.scm.id>
 	</properties>
 	<modules>
-    	<module>tf-cards-data</module>
-    	<module>tf-cards-web</module>
-  	</modules>
+		<module>tf-cards-data</module>
+		<module>tf-cards-web</module>
+	</modules>
 	<dependencies>
 
 	</dependencies>
@@ -39,6 +41,19 @@
 					</excludes>
 				</configuration>
 			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-release-plugin</artifactId>
+				<configuration>
+					<goals>install</goals>
+				</configuration>
+			</plugin>
 		</plugins>
 	</build>
+
+	<scm>
+		<developerConnection>scm:git:https://jimenezzj-hotmail@github.com/jimenezzj-hotmail/jjz-tf-cards-spring.git</developerConnection>
+		<tag>HEAD</tag>
+	</scm>
+
 </project>
