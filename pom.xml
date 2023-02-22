@@ -9,7 +9,7 @@
 	</parent>
 	<groupId>com.jjimenezz</groupId>
 	<artifactId>jjz-tf-cards-spring</artifactId>
-	<version>0.0.1</version>
+	<version>0.0.2-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>jjz-tf-cards-spring</name>
 	<description>Demo project for Spring Boot</description>
@@ -51,7 +51,7 @@
 
 	<scm>
 		<developerConnection>scm:git:https://jimenezzj-hotmail@github.com/jimenezzj-hotmail/jjz-tf-cards-spring.git</developerConnection>
-		<tag>jjz-tf-cards-spring-0.0.1</tag>
+		<tag>HEAD</tag>
 	</scm>
 
 </project>
