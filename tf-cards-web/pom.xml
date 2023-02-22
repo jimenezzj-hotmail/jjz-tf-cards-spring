@@ -4,7 +4,7 @@
   <parent>
     <artifactId>jjz-tf-cards-spring</artifactId>
     <groupId>com.jjimenezz</groupId>
-    <version>0.0.2-SNAPSHOT</version>
+    <version>0.0.2</version>
   </parent>
 
   <!-- <groupId>com.jjimenezz</groupId> -->
@@ -51,6 +51,6 @@
   </dependencies>
 
   <scm>
-    <tag>tf-cards-web-1.1</tag>
+    <tag>jjz-tf-cards-spring-0.0.2</tag>
   </scm>
 </project>
