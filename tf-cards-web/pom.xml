@@ -4,12 +4,12 @@
   <parent>
     <artifactId>jjz-tf-cards-spring</artifactId>
     <groupId>com.jjimenezz</groupId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.1</version>
   </parent>
 
   <!-- <groupId>com.jjimenezz</groupId> -->
   <artifactId>tf-cards-web</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.0</version>
 
   <name>tf-cards-web</name>
 
@@ -24,7 +24,7 @@
     <dependency>
       <groupId>com.jjimenezz</groupId>
       <artifactId>tf-cards-data</artifactId>
-      <version>1.0-SNAPSHOT</version>
+      <version>1.0</version>
     </dependency>
     <!-- REMOTE -->
     <dependency>

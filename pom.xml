@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -11,7 +9,7 @@
 	</parent>
 	<groupId>com.jjimenezz</groupId>
 	<artifactId>jjz-tf-cards-spring</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1</version>
 	<packaging>pom</packaging>
 	<name>jjz-tf-cards-spring</name>
 	<description>Demo project for Spring Boot</description>
@@ -53,7 +51,7 @@
 
 	<scm>
 		<developerConnection>scm:git:https://jimenezzj-hotmail@github.com/jimenezzj-hotmail/jjz-tf-cards-spring.git</developerConnection>
-		<tag>HEAD</tag>
+		<tag>jjz-tf-cards-spring-0.0.1</tag>
 	</scm>
 
 </project>
