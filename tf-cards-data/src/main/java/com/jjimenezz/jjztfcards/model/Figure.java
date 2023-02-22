@@ -10,6 +10,7 @@ public class Figure {
     private FigureType figureType;
 
     public String getName() {
+        var r = 9;
         return name;
     }
     public void setName(String name) {
