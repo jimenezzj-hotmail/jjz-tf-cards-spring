@@ -2,7 +2,7 @@ package com.jjimenezz.jjztfcards.model;
 
 import java.time.LocalDate;
 
-public class Figure {
+public class Figure extends BaseEntity{
     
     private String name;
     private LocalDate releaseYear;
@@ -10,7 +10,6 @@ public class Figure {
     private FigureType figureType;
 
     public String getName() {
-        var r = 9;
         return name;
     }
     public void setName(String name) {

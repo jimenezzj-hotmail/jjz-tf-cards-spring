@@ -1,6 +1,6 @@
 package com.jjimenezz.jjztfcards.model;
 
-public class FigureType {
+public class FigureType extends BaseEntity{
 
     private String name;
 

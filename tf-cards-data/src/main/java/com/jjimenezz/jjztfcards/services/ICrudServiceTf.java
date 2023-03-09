@@ -10,7 +10,7 @@ public interface ICrudServiceTf<T, ID> {
 
     T save(T newEntity);
 
-    T delete(T entity);
+    void delete(T entity);
 
-    T deleteById(ID id);
+    void deleteById(ID id);
 }
