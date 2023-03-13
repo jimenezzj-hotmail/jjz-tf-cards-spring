@@ -1,0 +1,12 @@
+.figure-card {
+    @apply bg-no-repeat bg-center-top bg-origin-padding bg-[length:auto_100%] h-[18rem] flex justify-items-stretch;
+    /*background-image: url(/images/transformers/fallen/figure/main.png);*/
+    /*mask-image: url(/svgs/octogon-card.svg);*/
+    mask-repeat: no-repeat;
+    mask-size: auto 100%;
+    mask-position: center top;
+    /*-webkit-mask-image: url(/svgs/octogon-card.svg);*/
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: auto 100%;
+    -webkit-mask-position: center top;
+}

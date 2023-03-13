@@ -18,12 +18,12 @@
 		<java.version>17</java.version>
 		<project.scm.id>tf-cards-dev-server</project.scm.id>
 	</properties>
-	
+
 	<modules>
 		<module>tf-cards-data</module>
 		<module>tf-cards-web</module>
 	</modules>
-	
+
 	<dependencies>
 
 	</dependencies>
