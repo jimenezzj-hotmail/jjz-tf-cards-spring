@@ -7,35 +7,36 @@
     <!--    <link th:href="@{/main.css}" rel="stylesheet"/>-->
     <title>All Figures List</title>
 </head>
-<body>
-<script type="text/javascript" th:src="@{/dist/figure-bundle.js}"></script>
-<script type="text/javascript" th:src="@{/dist/globals-bundle.js}"></script>
-
-<h1 class="mb-3 border-b-[3px] border-b-red-600 ">All Figures List</h1>
-<ul class="flex">
-    <li th:each="fg:${figures}" class="mr-3 last-of-type:mr-0">
-        <div class="figure-card flex flex-col-reverse flex-wrap w-full">
-            <div class="py-0 pr-2 pl-4 bg-[#34CCE9] relative self-start flex items-center justify-start order-1 uppercase
+<body th:insert="fragments/layout/layout :: layout(~{:: .app})">
+<div class="app">
+    <script type="text/javascript" th:src="@{/dist/globals-bundle.js}"></script >
+    <script type="text/javascript" th:src="@{/dist/figure-bundle.js}"></script>
+    <h1 th:text="#{figures.tlt}" class="mb-3 border-b-[3px] border-b-red-600 ">All Figures List</h1>
+    <ul class="flex">
+        <li th:each="fg:${figures}" class="mr-3 last-of-type:mr-0">
+            <div class="figure-card flex flex-col-reverse flex-wrap w-full">
+                <div class="py-0 pr-2 pl-4 bg-[#34CCE9] relative self-start flex items-center justify-start order-1 uppercase
                                     before:absolute before:w-0 before:h-0 before:right-[-17px]
                                     before:border-x-[15px] before:border-solid before:border-x-transparent
                                     before:border-b-[24px] before:border-bg-red-500">
-                <h4></h4>
-                <ul class="flex absolute right-[-51%]">
-                    <li>
-                        <span class="p-1 bg-red-700"></span>
-                    </li>
-                </ul>
-            </div>
-            <div class="px-4 pb-4 relative flex justify-between text-white bg-gray-900
+                    <h4></h4>
+                    <ul class="flex absolute right-[-51%]">
+                        <li>
+                            <span class="p-1 bg-red-700"></span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="px-4 pb-4 relative flex justify-between text-white bg-gray-900
                              before:absolute before:bottom-[-5%] before:right-0 before:left-0 before:py-2 before:bg-sky-600">
-                <figure>
-                    <em>*</em>
-                </figure>
-                <h3 th:text="${fg.name}"></h3>
-                <p th:text="${fg.id < 10 ? '0' + fg.id: fg.id }"></p>
+                    <figure>
+                        <em>*</em>
+                    </figure>
+                    <h3 th:text="${fg.name}"></h3>
+                    <p th:text="${fg.id < 10 ? '0' + fg.id: fg.id }"></p>
+                </div>
             </div>
-        </div>
-    </li>
-</ul>
+        </li>
+    </ul>
+</div>
 </body>
 </html>

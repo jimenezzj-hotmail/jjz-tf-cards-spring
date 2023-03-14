@@ -29,6 +29,7 @@
     "webpack-dev-server": "^4.11.1"
   },
   "dependencies": {
+    "external-svg-loader": "^1.6.1",
     "webpack": "^5.76.1"
   }
 }

@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Header</title>
+</head>
+<body>
+<header th:fragment="header" class="flex items-center mb-5 shadow-lg rounded-b-2xl">
+    <div class="logo ml-5">
+        <a class="flex items-center text-2xl" href="/">
+            <figure>
+                <svg data-src="/assets/svg/logo_(tf-cards).svg"></svg>
+            </figure>
+            <strong class="ml-3 uppercase">Tf Cards</strong>
+        </a>
+    </div>
+    <nav class="flex-grow py-3">
+        <ul class="flex justify-center items-center">
+            <li class="mr-6">
+                <a class="inline-flex flex-col items-center font-semibold" href="/">
+                    <em class="h-auto w-[25px]">
+                        <svg data-src="/assets/svg/icons/home.svg"></svg>
+                    </em>
+                    <span>Home</span>
+                </a>
+            </li>
+            <li class="mr-6">
+                <a href="/">
+                    <em class="block p-2 bg-sky-500">
+                    </em>
+                    <span>Blog</span>
+                </a>
+            </li>
+            <li class="mr-6">
+                <a href="/">
+                    <em class="block p-2 bg-sky-500">
+                    </em>
+                    <span>Community</span>
+                </a>
+            </li>
+            <li class="mr-6">
+                <a href="/">
+                    <em class="block p-2 bg-sky-500">
+                    </em>
+                    <span>Store</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <div class="header-actions mr-5">
+        <ul class="flex justify-end items-center">
+            <li class="mr-3 last-of-type:mr-0">
+                <em class="block rounded-full p-3 bg-purple-200">
+                </em>
+            </li>
+            <li class="mr-3 last-of-type:mr-0">
+                <em class="block rounded-full p-3 bg-purple-200">
+                </em>
+            </li>
+        </ul>
+    </div>
+</header>
+</body>
+</html>
