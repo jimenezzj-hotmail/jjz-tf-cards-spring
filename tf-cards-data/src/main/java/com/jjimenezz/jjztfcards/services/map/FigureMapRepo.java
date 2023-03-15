@@ -22,7 +22,8 @@ public class FigureMapRepo extends AbstractMapService<Figure, Long> implements I
 
     @Override
     public Figure save(Figure newEntity) {
-       return super.store(newEntity);
+
+        return super.store(newEntity);
     }
 
     @Override

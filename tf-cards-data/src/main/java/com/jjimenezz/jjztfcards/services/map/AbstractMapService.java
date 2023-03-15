@@ -35,11 +35,12 @@ public abstract class AbstractMapService<T extends BaseEntity, I extends Long> {
         Long resNextId = null;
         if (persistenceMap.keySet().size() == 0) resNextId = 1L;
         else {
-            Long maxVal = Collections.max(persistenceMap.keySet());
-            for (long i = maxVal; 0 == (i % 10); i--) {
+            Long maxVal = Collections.max(persistenceMap.keySet()) % 10;
+            for (long i = maxVal; i > 0; i--) {
                 if (!persistenceMap.containsKey(i)) resNextId = i;
             }
         }
+        if (resNextId == null) resNextId = (long) persistenceMap.keySet().size() + 1;
         return resNextId;
     }
 }
